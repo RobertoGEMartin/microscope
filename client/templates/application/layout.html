@@ -2,7 +2,12 @@
     <div class="container">
     <header class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{pathFor 'PostsList'}}">Microscope</a>
+<!--
+            {{pathFor}} Spacebars helper, which returns the URL path component of any route.
+            We want our main home link to point us back to the posts list,
+            so instead of specifying a static / URL, we can also use the Spacebars helper
+-->
+            <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
         </div>
     </header>
     <div id="main">
