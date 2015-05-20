@@ -1,0 +1,24 @@
+<template name="layout">
+    <div class="container">
+    <header class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{pathFor 'PostsList'}}">Microscope</a>
+        </div>
+    </header>
+    <div id="main">
+<!--
+        Layouts allow you to reuse a common look and feel in multiple pages
+        in your application so you don't have to duplicate the html and logic
+        on every single page template.
+
+        Layouts are just templates. But, inside of a layout you can use a special helper called yield.
+        You can think of yield as a placeholder for content.
+        The placeholder is called a region.
+        The content will be "injected" into the region when we actually run our route.
+        This lets us reuse the layout on many different pages,
+        only changing the content of the yield regions.
+-->
+        {{> yield}}
+    </div>
+</div>
+</template>
